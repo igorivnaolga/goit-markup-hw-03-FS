@@ -29,9 +29,11 @@ body {
   background-color: #ffffff;
 }
 .container {
-  width: 1440px;
+  width: 1158px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .list {
@@ -67,12 +69,31 @@ body {
 }
 
 /* header */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-nav {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  margin-right: 76px;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -99,12 +120,19 @@ body {
 .contacts {
   font-style: normal;
 }
+.contacts-list {
+  display: flex;
+}
+
 .tel,
 .mail {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.mail-link {
+  margin-right: 40px;
 }
 .mail-link:hover,
 .mail-link:focus,
@@ -116,9 +144,12 @@ body {
 /* Hero */
 .hero {
   background-color: var(--secondary-color);
+  display: flex;
 }
 
 .hero-header {
+  width: 496px;
+
   background-color: var(--secondary-color);
   font-weight: 700;
   font-size: 56px;
@@ -131,6 +162,7 @@ body {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   padding: 16px 32px;
+
   background-color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
