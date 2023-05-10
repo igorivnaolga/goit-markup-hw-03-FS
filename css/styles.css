@@ -78,6 +78,7 @@ body {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
   display: flex;
@@ -86,12 +87,16 @@ body {
 }
 .page-nav {
   display: flex;
+  align-items: center;
 }
 .menu {
   display: flex;
 }
 .menu-item:not(:last-child) {
   margin-right: 40px;
+}
+.menu-link {
+  padding: 24px 0;
 }
 
 .logo {
@@ -149,16 +154,18 @@ body {
 
 /* Hero */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--secondary-color);
 }
 .container-hero {
-  padding: 188px 472px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main-btn {
-  padding-top: 48px;
-}
+
 .hero-header {
-  width: 496px;
+  max-width: 496px;
   margin: 0;
   background-color: var(--secondary-color);
   font-weight: 700;
@@ -169,6 +176,11 @@ body {
   color: #ffffff;
 }
 .hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+
+  border: none;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   padding: 16px 32px;
@@ -195,12 +207,18 @@ body {
   display: flex;
   gap: 24px;
 }
+.work-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 
 /* Section 3 */
 
 .work-img {
   display: flex;
   gap: 24px;
+}
+.img {
+  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 /* Section 4 */
@@ -211,22 +229,26 @@ body {
   background-color: #f4f4fd;
 }
 .team-member {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-content-wrapper {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   text-align: center;
+}
+.team-img {
+  margin-right: 0;
+  min-width: 264px;
 }
 
 /* Portfolio */
 .portfolio {
+  padding-top: 96px;
   padding-bottom: 120px;
   background-color: #ffffff;
 }
 .filter-buttons {
-  padding-top: 96px;
   padding-bottom: 72px;
   display: flex;
   justify-content: center;
@@ -267,16 +289,17 @@ body {
   background-color: var(--secondary-color);
 }
 .footer-wrapper {
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 156px;
+  margin-left: 156px;
+  padding: 100px 0 100px;
   text-align: left;
   width: 264px;
 }
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .describtion-light {
   color: #f4f4fd;
-  padding-top: 16px;
 }
 .logo-studio-light {
   color: #f4f4fd;
