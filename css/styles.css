@@ -133,6 +133,7 @@ body {
 }
 .contacts-list {
   display: flex;
+  gap: 40px;
 }
 
 .tel,
@@ -177,14 +178,13 @@ body {
 }
 .hero-btn {
   display: block;
+
   min-width: 169px;
   height: 56px;
-
   border: none;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   padding: 16px 32px;
-
   background-color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
@@ -249,12 +249,14 @@ body {
   background-color: #ffffff;
 }
 .filter-buttons {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 .btn {
-  margin-right: 24px;
+  padding: 12px 24px;
+
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   font-weight: 500;
@@ -272,25 +274,31 @@ body {
 .btn:focus {
   background-color: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.card {
+  width: calc((100% - 48px) / 3);
 }
 .card-content-wrapper {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 /* Footer */
 .footer {
+  padding: 100px 0 100px;
   background-color: var(--secondary-color);
 }
 .footer-wrapper {
   margin-left: 156px;
-  padding: 100px 0 100px;
+
   text-align: left;
   width: 264px;
 }
